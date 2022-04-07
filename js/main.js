@@ -6,8 +6,12 @@ let getRandom = function (min, max) {
 
 getRandom(1, 100);
 
-let lengthString = (string, maxLength) {
-  if (maxLenght <= 140) { }
-} 
+let calculateLengthString = function (text) {
+  let maxLength = 140;
+  let lengthString = text.length;
+  if (lengthString <= maxLength) {
+    return lengthString;
+  }
+}
 
-lengthString (1, 140)
+console.log('Длина строки ' + calculateLengthString('Hello') + ' символов');
