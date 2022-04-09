@@ -10,8 +10,10 @@ const calculateLengthString = function (text) {
   const maxLength = 140;
   const lengthString = text.length;
   if (lengthString <= maxLength) {
-    return lengthString;
+    return true;
+  } else {
+    return false;
   }
 };
 
-calculateLengthString('Hello');
+calculateLengthString('Hello! How are you?');
